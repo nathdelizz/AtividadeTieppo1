@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+
+<h1>Exercício:</h1>
+<h2>Crie um objeto de data e depois mostre a data no formato brasileiro e no formato internacional nos locais indicados</h2>
+
+<p id="dataBR">Exiba o resultado aqui!</p>
+<p id="dataMySQL">Exiba o resultado aqui!</p>
+
+<script>
+var currentDate = new Date();
+var dia = currentDate.getDate();
+var mes = currentDate.getMonth() + 1;
+var ano = currentDate.getFullYear();
+var horas = currentDate.getHours();
+var minutos = currentDate.getMinutes();
+var segundos = currentDate.getSeconds();
+
+var dataBR = dia.toString().padStart(2, '0') + "/" + mes.toString().padStart(2, '0') + "/" + ano;
+document.getElementById("dataBR").innerHTML = dataBR;
+
+var dataMySQL = currentDate.toISOString().split('T')[0];
+document.getElementById("dataMySQL").innerHTML = dataMySQL ;
+
+</script>
+
+</body>
+</html>

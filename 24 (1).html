@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+
+<script>
+function atualizaTexto() {
+var valor = document.getElementById("nome").value;
+document.getElementById("demo").innerHTML = valor; 
+}
+
+
+</script>
+
+<h1>Exercício:</h1>
+<h2>Crie a função "atualizaTexto()", que atualiza a cada tecla digitada o conteúdo do parágrafo "demo" com o texto digitado.</h2>
+
+<label>Nome</label>
+<input type="text" name="nome" id="nome" onkeyup="atualizaTexto()"/>
+
+<p id="demo">Mostre o resultado aqui</p> 
+
+</body>
+</html>

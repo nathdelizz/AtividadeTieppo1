@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+
+<h1>Exercício:</h1>
+<h2>Crie a função "produto(a,b)" que está sendo chamada, mostrando no local indicado o produto de 4 x 5.</h2>
+
+<p id="demo">Mostre o resultado aqui</p> 
+
+<script>
+function produto(a,b) {
+return a * b;
+}
+
+var n1 = 4, n2 = 5;
+
+var info = n1 + ' x ' + n2 + ' = ' + produto(n2,n1);
+document.getElementById("demo").innerHTML = info;
+</script>
+
+</body>
+</html>

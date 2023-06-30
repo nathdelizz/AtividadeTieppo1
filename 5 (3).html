@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+
+<h1>Exercício:</h1>
+<h2>Mostre o texto "Tomas Carado, 25 anos", utilizando o objeto JSON "pessoa" declarado e concatenando a saída.</h2>
+
+<p id="demo">Mostre o resultado aqui</p> 
+<button onclick="trocar()">Clique aqui</button>
+<script>
+var pessoa ={ nome:"Tomas Carado", idade: 25 }
+function trocar(){
+document.getElementById("demo").innerHTML= pessoa.nome +"," + pessoa.idade +" "+"anos";
+}
+</script>
+
+</body>
+</html>

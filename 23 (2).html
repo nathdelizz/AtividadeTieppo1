@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+
+<script>
+function mostraEntrada() {
+var valor = document.getElementById("nome").value;
+document.getElementById("demo").innerHTML = valor; 
+}
+
+
+</script>
+
+<h1>Exercício:</h1>
+<h2>Crie a função "mostraEntrada()", que usa o atributo ".value" para obter o valor digitado por um usuário e mostre no local adequado quando o botão for clicado.</h2>
+
+<label>Nome</label>
+<input type="text" name="nome" id="nome"/>
+
+<button onClick="mostraEntrada()">Mostrar</button>
+
+<p id="demo">Mostre o resultado aqui</p> 
+
+</body>
+</html>
+	
+	

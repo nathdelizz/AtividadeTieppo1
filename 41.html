@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+
+<h1>Exercício:</h1>
+<h2>Escreva as funções "mostra()" e "esconde()" que exibem ou ocultam o texto "Olá, mundo!"</h2>
+
+<p id="demo">Olá, mundo!</p> 
+
+<button onClick="mostra()"/>Mostra</button>
+<button onClick="esconde()"/>Esconde</button>
+
+
+<script>
+function mostra(){
+document.getElementById("demo").style.visibility = "visible";
+}
+function esconde(){
+document.getElementById("demo").style.visibility = "hidden";
+}
+//Utilize os atributos nativos "style.visibility = visible" ou "style.visibility = hidden".
+</script>
+
+</body>
+</html>

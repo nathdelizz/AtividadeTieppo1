@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="50.css"/>
+</head>
+<body>
+
+<h1>Exercício</h1>
+<h2>Escreva a função "menuDescricao(paginaASerMostrada)" que mostra no local indicado a descrição da página a ser selecionada no menu quando o mouse é colocado sobre o link.</h2>
+<script>
+function menuDescricao(paginaASerMostrada) {
+	var descricoes = {
+		"home": "Visualize a página principal do site!",
+		"galeria": "Veja nossas fotos!",
+		"contato": "Quer falar com a gente? Entre em contato!"
+	};
+
+	document.getElementById("menu_descricao_inner").textContent = descricoes[paginaASerMostrada] || "";
+}
+</script>
+
+<nav>
+	
+	
+<div id="menu_links">
+		
+	
+<div><a href="#home" onmouseover="menuDescricao('home')" onmouseout="menuDescricao('')">Home</a></div>
+		
+		
+<div><a href="#galeria" onmouseover="menuDescricao('galeria')" onmouseout="menuDescricao('')">Galeria</a></div>
+		<div><a href="#contato" onmouseover="menuDescricao('contato')" onmouseout="menuDescricao('')">Contato</a></div>
+	</div>
+
+	
+
+	
+<div id="menu_descricao">
+		
+	
+<div id="menu_descricao_inner">Descrição aqui</div>
+	</div>
+
+</
+</nav>
+
+
+
+</
+</body>
+
+</
+</html>
